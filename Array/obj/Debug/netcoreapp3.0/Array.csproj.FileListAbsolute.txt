@@ -1,9 +1,0 @@
-D:\epam_projects\Autocode\Tasks for testers\Array\Array\Array\bin\Debug\netcoreapp3.0\Array.deps.json
-D:\epam_projects\Autocode\Tasks for testers\Array\Array\Array\bin\Debug\netcoreapp3.0\Array.dll
-D:\epam_projects\Autocode\Tasks for testers\Array\Array\Array\bin\Debug\netcoreapp3.0\Array.pdb
-D:\epam_projects\Autocode\Tasks for testers\Array\Array\Array\obj\Debug\netcoreapp3.0\Array.csprojAssemblyReference.cache
-D:\epam_projects\Autocode\Tasks for testers\Array\Array\Array\obj\Debug\netcoreapp3.0\Array.csproj.CoreCompileInputs.cache
-D:\epam_projects\Autocode\Tasks for testers\Array\Array\Array\obj\Debug\netcoreapp3.0\Array.AssemblyInfoInputs.cache
-D:\epam_projects\Autocode\Tasks for testers\Array\Array\Array\obj\Debug\netcoreapp3.0\Array.AssemblyInfo.cs
-D:\epam_projects\Autocode\Tasks for testers\Array\Array\Array\obj\Debug\netcoreapp3.0\Array.dll
-D:\epam_projects\Autocode\Tasks for testers\Array\Array\Array\obj\Debug\netcoreapp3.0\Array.pdb
