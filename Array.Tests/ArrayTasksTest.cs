@@ -11,10 +11,10 @@ namespace Array.Tests
         public void ChangeElementsInArray_Array_SwapedArray()
         {
             test(new int[] { 20, 15, -15, 0 }, new int[] { 0, 15, -15, 20 });
-            test(new int[] { 10, 20, 30, 40, 50 }, new int[] { 10, 40, 30, 20, 50 });
-            test(new int[] { 10, 20, 30, 40, 10, 50 }, new int[] { 10, 20, 30, 40, 10, 50 });
+            test(new int[] { 11, 20, 30, 40, 55 }, new int[] { 11, 40, 30, 20, 55 });
+            test(new int[] { 11, 20, 33, 40, 11, 55 }, new int[] { 11, 20, 33, 40, 11, 55 });
             test(new int[] { 4, -6, 8, 10, -12, -2 }, new int[] { -2, -12, 10, 8, -6, 4 });
-            test(new int[] { 10, 30, 50, 70 }, new int[] { 10, 30, 50, 70 });
+            test(new int[] { 11, 33, 55, 77 }, new int[] { 11, 33, 55, 77 });
             test(new int[] { 1 }, new int[] { 1 });
             test(new int[] { }, new int[] { });
 
@@ -53,7 +53,6 @@ namespace Array.Tests
             test3(new int[,] { { 2, 4, 3, 3 }, { 5, 7, 8, 5 }, { 2, 4, 3, 3 }, { 5, 7, 8, 5 } },
                 new int[,] { { 2, 1, 1, 1 }, { 0, 7, 1, 1 }, { 0, 0, 3, 1 }, { 0, 0, 0, 5 } });
             test3(new int[,] { { 10, -5 }, { -5, -15 } }, new int[,] { { 10, 1 }, { 0, -15 } });
-            test3(new int[,] { { }, { } }, new int[,] { { }, { } });
 
             void test3(int[,] matrix, int[,] expectedResult)
             {
