@@ -50,7 +50,7 @@ namespace ArrayObject
         /// <summary>
         /// Task 3 
         /// </summary>
-        private static void ChangeMatrixDiagonally(int[,] matrix)
+        public static void ChangeMatrixDiagonally(int[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
