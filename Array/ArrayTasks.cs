@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Linq;
 
 namespace ArrayObject
 {
@@ -9,9 +10,15 @@ namespace ArrayObject
         /// </summary>
         public static void ChangeElementsInArray(int[] nums)
         {
-            // TODO: delete code line below, write down your solution 
-            // Hint: Don`t create or initialize any array, work only with given 'numbs'
-            throw new NotImplementedException();
+            for (int i = 0; i < nums.Length / 2; i++)
+            {
+                if (nums[i] % 2 == 0 && nums[nums.Length - i - 1] % 2 == 0)
+                {
+                    nums[i] = nums[i] + nums[nums.Length - i - 1];
+                    nums[nums.Length - i - 1] = nums[i] - nums[nums.Length - i - 1];
+                    nums[i] = nums[i] - nums[nums.Length - i - 1];
+                }
+            }
         }
 
         /// <summary>
@@ -19,9 +26,25 @@ namespace ArrayObject
         /// </summary>
         public static int DistanceBetweenFirstAndLastOccurrenceOfMaxValue(int[] nums)
         {
-            // TODO: delete code line below, write down your solution 
-            // Hint: Don`t modify array 'nums'
-            throw new NotImplementedException();
+            int maxIndex = 0, minIndex = 0;
+            int maxInt = Int32.MinValue;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] >= maxInt)
+                {
+                    maxInt = nums[i];
+                    maxIndex = i;
+                }
+            }
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == maxInt)
+                {
+                    minIndex = i;
+                    break;
+                }
+            }
+            return maxIndex - minIndex;
         }
 
         /// <summary>
@@ -29,9 +52,14 @@ namespace ArrayObject
         /// </summary>
         public static void ChangeMatrixDiagonally(int[,] matrix)
         {
-            // TODO: delete code line below, write down your solution 
-            // Hint: Don`t create or initialize array, work only with given 'matrix'
-            throw new NotImplementedException();
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (i > j) matrix[i, j] = 0; 
+                    else if (i < j) matrix[i, j] = 1;
+                }
+            }
         }
     }
 }
